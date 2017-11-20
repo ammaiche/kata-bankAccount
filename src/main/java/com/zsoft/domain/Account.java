@@ -5,7 +5,6 @@ import java.util.Set;
 
 public class Account {
 
-
     private String number;
     private double balance;
     private Set<Transaction> transactions = new HashSet();
@@ -13,11 +12,9 @@ public class Account {
     public void setNumber(String number) {
         this.number = number;
     }
-
     public void setBalance(double balance) {
         this.balance = balance;
     }
-
     public String getNumber() {
         return number;
     }
@@ -37,7 +34,6 @@ public class Account {
         if (Double.compare(account.balance, balance) != 0) return false;
         return number.equals(account.number);
     }
-
     @Override
     public int hashCode() {
         int result;

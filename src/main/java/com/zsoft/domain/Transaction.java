@@ -5,13 +5,11 @@ import java.time.LocalDateTime;
 
 public class Transaction {
 
-
     private String transactionId;
     private TransactionType type;
     private LocalDateTime date;
     private double amount;
     private double balance;
-
 
     public void setType(TransactionType type) {
         this.type = type;
