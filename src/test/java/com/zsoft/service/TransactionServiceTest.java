@@ -4,6 +4,7 @@ import com.zsoft.domain.Account;
 import com.zsoft.domain.Client;
 import com.zsoft.domain.Transaction;
 import com.zsoft.domain.TransactionType;
+import com.zsoft.exceptions.AccountNotFoundException;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -39,11 +40,12 @@ public class TransactionServiceTest {
 
         accountService.deleteAccount(account.getNumber());
     }
-    @Test
+    @Test(expected = AccountNotFoundException.class)
     public void depositAccountNotFoundException() throws Exception {
 
         Account account = new Account();
         account.setNumber("007");
+        transactionService.deposit(account.getNumber(), 500);
     }
 
     @Test
