@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 public class AccountServiceTest {
 
     private static Client client;
-    private AccountService accountService = new AccountService();
+    private AccountService accountService = new AccountServiceImpl();
 
     @BeforeClass
     public static void init(){
