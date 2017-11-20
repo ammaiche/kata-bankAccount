@@ -2,12 +2,19 @@ package com.zsoft.domain;
 
 import java.util.HashMap;
 
-public class User {
+public class Client  {
 
+    private static final Client instance = new Client();
+
+    HashMap<String, Account> accounts;
     private String firstName;
     private String lastName;
     private String address;
-    HashMap<String, Account> accounts;
+
+    public static Client getInstance(){
+        return instance;
+    }
+    private Client(){}
 
     public String getFirstName() {
         return firstName;
@@ -20,6 +27,7 @@ public class User {
     public String getAddress() {
         return address;
     }
+
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }

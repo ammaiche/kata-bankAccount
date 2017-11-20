@@ -4,10 +4,32 @@ import java.util.Set;
 
 public class Account {
 
+
     private String number;
     private double balance;
     private Set<Transaction> transactions;
 
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public void setTransactions(Set<Transaction> transactions) {
+        this.transactions = transactions;
+    }
+    public String getNumber() {
+        return number;
+    }
+    public double getBalance() {
+        return balance;
+    }
+    public Set<Transaction> getTransactions() {
+        return transactions;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
