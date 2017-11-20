@@ -13,7 +13,7 @@ import java.util.Random;
 
 public class TransactionService {
 
-    Client currentClient;
+    private Client currentClient;
 
     public  TransactionService(){
 
@@ -44,12 +44,15 @@ public class TransactionService {
         }else throw new AccountNotFoundException("Account doesn't exist");
     }
 
-    public double withdraw(String accountNumber, double amount) throws AccountNotFoundException,BalanceNotSufficientException {
+    public double withdraw(String accountNumber, double amount) throws AccountNotFoundException, BalanceNotSufficientException,
+            AmountNotValidException {
 
         if(currentClient.getAccounts().keySet().contains(accountNumber)) {
 
             Account account =currentClient.getAccounts().get(accountNumber);
-            if(account.getBalance()-amount <0) throw  new BalanceNotSufficientException("Balance is not suffcient");
+
+            if(amount<=0) throw new AmountNotValidException("Amount is not valid");
+            else if(account.getBalance()-amount <0) throw  new BalanceNotSufficientException("Balance is not suffcient");
             else{
 
                 account.setBalance(account.getBalance()-amount);

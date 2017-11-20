@@ -6,7 +6,7 @@ import com.zsoft.exceptions.AccountNotFoundException;
 
 public class AccountService {
 
-    Client currentClient;
+    private Client currentClient;
 
     public  AccountService(){
 

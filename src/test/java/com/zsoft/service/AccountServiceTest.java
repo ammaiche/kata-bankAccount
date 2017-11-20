@@ -14,8 +14,8 @@ import static org.junit.Assert.*;
 
 public class AccountServiceTest {
 
-    static Client client;
-    AccountService accountService = new AccountService();
+    private static Client client;
+    private AccountService accountService = new AccountService();
 
     @BeforeClass
     public static void init(){
@@ -62,7 +62,7 @@ public class AccountServiceTest {
     }
 
     @Test(expected = AccountNotFoundException.class)
-    public void deleteAccountWithException() throws Exception {
+    public void deleteAccountNotFoundException() throws Exception {
 
         accountService.deleteAccount("0000");
     }
@@ -89,7 +89,7 @@ public class AccountServiceTest {
     }
 
     @Test(expected = AccountNotFoundException.class)
-    public void updateAccountWithException() throws Exception {
+    public void updateAccountNotFoundException() throws Exception {
 
         Account account = new Account();
         account.setNumber("1234");
@@ -124,7 +124,7 @@ public class AccountServiceTest {
     }
 
     @Test(expected = AccountNotFoundException.class)
-    public void getAccountWithException() throws Exception {
+    public void getAccountNotFoundException() throws Exception {
         accountService.getAccount("007");
     }
 }

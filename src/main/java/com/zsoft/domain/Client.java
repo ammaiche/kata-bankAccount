@@ -10,7 +10,7 @@ public class Client  {
     private String firstName;
     private String lastName;
     private String address;
-    HashMap<String, Account> accounts;
+    private HashMap<String, Account> accounts;
 
     public static Client getInstance(){
         return instance;

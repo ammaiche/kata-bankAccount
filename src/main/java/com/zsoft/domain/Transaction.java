@@ -1,6 +1,5 @@
 package com.zsoft.domain;
 
-
 import java.time.LocalDateTime;
 
 public class Transaction {
@@ -62,7 +61,7 @@ public class Transaction {
         if (Double.compare(that.balance, balance) != 0) return false;
         if (!transactionId.equals(that.transactionId)) return false;
         if (type != that.type) return false;
-        return date.equals(that.date);
+        return date.toLocalDate().equals(that.date.toLocalDate());
     }
 
     @Override

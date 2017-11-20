@@ -24,6 +24,7 @@ public class Account {
     public Set<Transaction> getTransactions() {
         return transactions;
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
