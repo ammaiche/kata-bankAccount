@@ -14,7 +14,10 @@ public class Client  {
     public static Client getInstance(){
         return instance;
     }
-    private Client(){}
+
+    private Client(){
+        accounts = new HashMap();
+    }
 
     public String getFirstName() {
         return firstName;

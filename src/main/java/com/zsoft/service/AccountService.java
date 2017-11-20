@@ -60,7 +60,5 @@ public class AccountService {
             account.setBalance(account.getBalance()-amount);
             return account.getBalance();
         }else throw new Exception();
-
     }
-
 }

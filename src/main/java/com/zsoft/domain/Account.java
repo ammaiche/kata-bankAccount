@@ -1,5 +1,6 @@
 package com.zsoft.domain;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class Account {
@@ -7,8 +8,7 @@ public class Account {
 
     private String number;
     private double balance;
-    private Set<Transaction> transactions;
-
+    private Set<Transaction> transactions = new HashSet();
 
     public void setNumber(String number) {
         this.number = number;
