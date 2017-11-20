@@ -10,6 +10,7 @@ public class Transaction {
     private double amount;
     private double balance;
 
+
     public void setType(TransactionType type) {
         this.type = type;
     }

@@ -18,9 +18,6 @@ public class Account {
         this.balance = balance;
     }
 
-    public void setTransactions(Set<Transaction> transactions) {
-        this.transactions = transactions;
-    }
     public String getNumber() {
         return number;
     }
