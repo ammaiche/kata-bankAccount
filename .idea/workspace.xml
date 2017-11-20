@@ -52,9 +52,11 @@
       <file leaf-file-name="AccountService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zsoft/service/AccountService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-809">
-              <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-              <folding />
+            <state relative-caret-position="749">
+              <caret line="69" column="64" lean-forward="true" selection-start-line="69" selection-start-column="64" selection-end-line="69" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,8 +64,8 @@
       <file leaf-file-name="AccountServiceTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/zsoft/service/AccountServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+            <state relative-caret-position="256">
+              <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,6 +82,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cli</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -288,7 +295,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AccountServiceTest.deleteAccountWithException">
+  <component name="RunManager" selected="JUnit.AccountServiceTest.updateAccountWithException">
     <configuration name="AccountServiceTest.createAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -364,19 +371,44 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="MainAppTest.returnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountServiceTest.updateAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.zsoft.*" />
+          <option name="PATTERN" value="com.zsoft.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="bank-account" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.zsoft" />
-      <option name="MAIN_CLASS_NAME" value="com.zsoft.MainAppTest" />
-      <option name="METHOD_NAME" value="returnTrue" />
+      <option name="PACKAGE_NAME" value="com.zsoft.service" />
+      <option name="MAIN_CLASS_NAME" value="com.zsoft.service.AccountServiceTest" />
+      <option name="METHOD_NAME" value="updateAccount" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="AccountServiceTest.updateAccountWithException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.zsoft.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="bank-account" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.zsoft.service" />
+      <option name="MAIN_CLASS_NAME" value="com.zsoft.service.AccountServiceTest" />
+      <option name="METHOD_NAME" value="updateAccountWithException" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -470,18 +502,20 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.MainAppTest.returnTrue" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.AccountServiceTest.createAccount" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.AccountServiceTest.deleteAccount" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.AccountServiceTest.deleteAccountWithException" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.AccountServiceTest.createAccount" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.AccountServiceTest.deleteAccount" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.AccountServiceTest.deleteAccountWithException" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.AccountServiceTest.updateAccount" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.AccountServiceTest.updateAccountWithException" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.AccountServiceTest.deleteAccountWithException" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.AccountServiceTest.deleteAccount" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.AccountServiceTest.createAccount" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MainAppTest.returnTrue" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AccountServiceTest.updateAccountWithException" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.AccountServiceTest.updateAccount" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.AccountServiceTest.deleteAccountWithException" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.AccountServiceTest.deleteAccount" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.AccountServiceTest.createAccount" />
       </list>
     </recent_temporary>
   </component>
@@ -495,20 +529,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511177663164</updated>
-      <workItem from="1511177664400" duration="6133000" />
+      <workItem from="1511177664400" duration="6807000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AccountServiceTest_createAccount - 2017.11.20 at 16h 29m 27s.xml">
-      <configuration name="AccountServiceTest.createAccount" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountServiceTest_createAccount - 2017.11.20 at 16h 30m 17s.xml">
-      <configuration name="AccountServiceTest.createAccount" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountServiceTest_createAccount - 2017.11.20 at 16h 30m 35s.xml">
-      <configuration name="AccountServiceTest.createAccount" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AccountServiceTest_createAccount - 2017.11.20 at 16h 32m 05s.xml">
       <configuration name="AccountServiceTest.createAccount" configurationId="JUnit" />
     </history-entry>
@@ -530,9 +555,18 @@
     <history-entry file="AccountServiceTest_deleteAccount - 2017.11.20 at 16h 51m 14s.xml">
       <configuration name="AccountServiceTest.deleteAccount" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AccountServiceTest_deleteAccountWithException - 2017.11.20 at 16h 52m 12s.xml">
+      <configuration name="AccountServiceTest.deleteAccountWithException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceTest_updateAccount - 2017.11.20 at 17h 01m 30s.xml">
+      <configuration name="AccountServiceTest.updateAccount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceTest_updateAccount - 2017.11.20 at 17h 01m 56s.xml">
+      <configuration name="AccountServiceTest.updateAccount" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6133000" />
+    <option name="totallyTimeSpent" value="6807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1535" height="904" extended-state="6" />
@@ -722,16 +756,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zsoft/service/AccountService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-809">
-          <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-          <folding />
+        <state relative-caret-position="749">
+          <caret line="69" column="64" lean-forward="true" selection-start-line="69" selection-start-column="64" selection-end-line="69" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/zsoft/service/AccountServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+        <state relative-caret-position="256">
+          <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
