@@ -33,10 +33,25 @@ public class AccountServiceTest {
         Client.getInstance().getAccounts().remove("1234");
     }
 
-    @Test(expected = AccountNotFoundException.class)
+    @Test
     public void deleteAccount() throws Exception {
-        fail("Not implemented");
+
+        Account account = new Account();
+        account.setNumber("1234");
+        account.setBalance(1500);
+
+        accountService.createAccount(account);
+        accountService.deleteAccount("1234");
+
+        assertEquals(Client.getInstance().getAccounts().containsKey("1234"), false);
     }
+
+    @Test(expected = AccountNotFoundException.class)
+    public void deleteAccountWithException() throws Exception {
+
+        accountService.deleteAccount("0000");
+    }
+
 
     @Test
     public void updateAccount() throws Exception {
