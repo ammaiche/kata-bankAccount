@@ -3,6 +3,7 @@ package com.zsoft.service;
 import com.zsoft.domain.Account;
 import com.zsoft.domain.Client;
 import com.zsoft.domain.Transaction;
+import com.zsoft.exceptions.AccountNotFoundException;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -28,9 +29,11 @@ public class AccountServiceTest {
         assertEquals(accountGet.getNumber(), "1234");
         assertEquals(accountGet.getBalance(), 1500,0);
         assertEquals(2, accountGet.getTransactions().size());
+
+        Client.getInstance().getAccounts().remove("1234");
     }
 
-    @Test
+    @Test(expected = AccountNotFoundException.class)
     public void deleteAccount() throws Exception {
         fail("Not implemented");
     }
